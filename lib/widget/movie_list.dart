@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/class/palet.dart';
 
 
 class MovieList extends StatelessWidget {
@@ -16,7 +17,7 @@ class MovieList extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width / 3,
         height: MediaQuery.of(context).size.height / 4,
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+        decoration: BoxDecoration(borderRadius: Palet.cardBorder),
         clipBehavior: Clip.antiAlias,
         child: Image(
           image: AssetImage(image),

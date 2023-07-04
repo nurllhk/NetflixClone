@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-
+import 'package:netflix/class/default_key.dart';
+import 'package:netflix/class/palet.dart';
 
 class MovieCard extends StatelessWidget {
   final String imagename;
-  const MovieCard({
 
-    super.key, required this.imagename,
+  const MovieCard({
+    super.key,
+    required this.imagename,
   });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * .6, // ekranın %60 ı
+      height: MediaQuery.of(context).size.height * .6,
       child: Stack(
         children: [
           Container(
@@ -38,32 +40,39 @@ class MovieCard extends StatelessWidget {
             bottom: 0,
             child: Container(
               width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.all(20),
+              padding: Palet.pagePadding,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Icon(Icons.add), Text('My List')],
+                    children: [Icon(Icons.add), Text(DefaultKey.list)],
                   ),
                   Container(
-                    padding: EdgeInsets.all(5),
+                    padding: Palet.cardPadding,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: Palet.cardBorder,
                         color: Colors.white),
                     child: Row(
                       children: [
-                        Icon(Icons.play_arrow_sharp,color: Colors.black,),
+                        const Icon(
+                          Icons.play_arrow_sharp,
+                          color: Palet.iconColor,
+                        ),
                         Text(
-                          'Play',
-                          style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.black),
-                        ), ],
+                          DefaultKey.play,
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleMedium
+                              ?.copyWith(color: Palet.iconColor),
+                        ),
+                      ],
                     ),
                   ),
                   const Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Icon(Icons.info), Text('İnfo')],
+                    children: [Icon(Icons.info), Text(DefaultKey.info)],
                   ),
                 ],
               ),

@@ -19,4 +19,5 @@ class DefaultImage {
   static const String image18 = "images/movies/movie18.jpg";
   static const String image19 = "images/movies/movie19.jpg";
   static const String image20 = "images/movies/movie20.jpg";
+  static const String logo = "images/logo.png";
 }

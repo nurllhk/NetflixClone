@@ -10,24 +10,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Netflix',
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
-        brightness: Brightness.dark,
-   scaffoldBackgroundColor: Colors.black,
-        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white54
-
-
-        )
-      ),
-
-
-
+          brightness: Brightness.dark,
+          scaffoldBackgroundColor: Colors.black,
+          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: Colors.white,
+              unselectedItemColor: Colors.white54)),
       home: const SplashScreen(),
     );
   }
