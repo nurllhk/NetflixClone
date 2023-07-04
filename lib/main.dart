@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/pages/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,13 +10,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Netflix',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      themeMode: ThemeMode.dark,
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+   scaffoldBackgroundColor: Colors.black,
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white54
+
+
+        )
       ),
-      home: const Scaffold(),
+      home: const SplashScreen(),
     );
   }
 }
