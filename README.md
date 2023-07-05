@@ -1,15 +1,14 @@
 # Netflix Clone
 
-
 <br>
 
 <table>
   <tr>
     <td>
-      <img src="https://github.com/nurllhk/NetflixClone/assets/79688257/a8a55fb8-4fe8-49ea-939b-7003251f9b12" alt="Resim 1" style="max-width: 100%;" />
+      <img src="https://github.com/nurllhk/NetflixClone/assets/79688257/116fda1d-47a7-4ffb-98ee-cf760120871d" alt="Resim 1" style="max-width: 100%;" />
     </td>
     <td>
-      <img src="https://github.com/nurllhk/NetflixClone/assets/79688257/6b5e00af-4096-4a84-ac88-86b94fe10d68" alt="Resim 2" style="max-width: 100%;" />
+      <img src="https://github.com/nurllhk/NetflixClone/assets/79688257/89d24032-325c-40d4-83ca-43a6b32a50a5" alt="Resim 2" style="max-width: 100%;" />
     </td>
   </tr>
 </table>
@@ -22,7 +21,9 @@
 
 
 
-https://github.com/nurllhk/NetflixClone/assets/79688257/81afcf66-70a9-43b7-8790-eec0e6456e4e
+
+
+https://github.com/nurllhk/NetflixClone/assets/79688257/0be90490-b328-44ac-94cb-2e7d4ad1eb02
 
 
 
